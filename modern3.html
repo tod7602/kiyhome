@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Media Query Basic</title>
-    <meta name='viewport' content="width=device-width, initial-scale=1.0" />
-    <style>
-      @media screen and (orientation: portrait) {
-        html {
-          background: red;
-          color:white; font-weight: bold;
-        }
-      }
-      @media screen and (orientation: landscape) {
-        html {
-          background: green;
-          color: white; font-weight: bold;
-        }
-      }
-    </style>
+    <title>Static Grid System</title>
+
+    <link rel="stylesheet/less" type="text/css" href="test.less" />
+    <script src="less.min.js"></script>
 </head>
 <body>
-    <h1>Lorem ipsum</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    <p>Aenean luctus congue scelerisque. Maecenas aliquet ante.</p>
+  <div class-"container">
+    <div class="row">
+      <div class="span_12">
+        <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span_6">
+        <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
+      </div>
+      <div class="span_6">
+        <h1>Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
+      </div>
+
+
+    </div>
+    <div class="row">
+      <div class="span_4"></div>
+      <div class="span_4"></div>
+      <div class="span_4"></div>
+    </div>
+    <div class="row">
+      <div class="span_3"></div>
+      <div class="span_3"></div>
+      <div class="span_3"></div>
+      <div class="span_3"></div>
+    </div>
+    <div class="row">
+      <div class="span_2"></div>
+      <div class="span_2"></div>
+      <div class="span_2"></div>
+      <div class="span_2"></div>
+      <div class="span_2"></div>
+      <div class="span_2"></div>
+    </div>
+  </div>
 </body>
 </html>
