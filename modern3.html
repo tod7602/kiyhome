@@ -1,89 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Static Grid System</title>
+  <script>
+  var student = {};
 
-    <link rel="stylesheet/less" type="text/css" href="test.less" />
-    <script src="less.min.js"></script>
+  student.이름 = '윤인성';
+  student.취미 = '악기';
+  student.특기 = '프로그래밍';
+  student.장래희망 = '생명공학자';
+
+  student.toString = function() {
+    var output = '';
+    for (var key in this) {
+      if(key != 'toString') {
+        output += key + '\t' + this[key] + '\n';
+      }
+    }
+    return output;
+  };
+
+  alert(student.toString());
+
+  </script>
 </head>
 <body>
-  <div class-"container">
-    <div class="row">
-      <div class="span_12">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="span_6">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_6">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
 
-
-    </div>
-    <div class="row">
-      <div class="span_4">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_4">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_4">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="span_3">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_3">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_3">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_3">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="span_2">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_2">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_2">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_2">
-        <h1>Lorem ipsum dolor sit amet</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-      </div>
-      <div class="span_2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-
-      </div>
-      <div class="span_2">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non ultricies odio. Nulla scelerisque pulvinar purus a varius. Morbi auctor facilisis eros vitae egestas. Proin in dui vel nunc laoreet ultricies vitae ut nunc. Praesent leo nulldignissim et scelerisque lobortis, eleifend quis mauris. Nam sed massa purus, vitae mollis sapien. Suspendisse cursus est sed orci tincidunt ultricies. Pellentesque non lectus suscipit urna dignissim imperdiet eget id quam. Pellentesque nec enim eniAliquam volutpat velit mi, a ultricies augue. Nam nec metus purus.</p>
-
-      </div>
-    </div>
-  </div>
 </body>
 </html>
